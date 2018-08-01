@@ -1,24 +1,43 @@
 # README
+###  For use on Codenvy
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+create a workspace on codenvy
+In Workspaces click Add Workspace
 
-Things you may want to cover:
+Add Name
 
-* Ruby version
+Team personal
 
-* System dependencies
+Select Stack Rails
 
-* Configuration
+Add or Import Project
 
-* Database creation
+select Git
 
-* Database initialization
+https://github.com/2davecollins/golf.git
 
-* How to run the test suite
+click ADD
 
-* Services (job queues, cache servers, search engines, etc.)
+click create
 
-* Deployment instructions
+In worspace after it starts
 
-* ...
+in Terminal cd golf
+
+type bundle install
+
+wait for gems to be installed
+
+type rake db:migrate
+
+Run the project navigate to the url
+navigate to route /items
+
+Catalog should be empty
+in terminal run the following command
+
+cp app/assets/backup/development.sqlite3 db/
+
+refresh browser and catalog should have items.
+
+Click on Git menu on navbar and select Delete Repository.
