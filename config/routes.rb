@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :profiles
   get 'cart/index'
 
   get 'site/about'
@@ -18,6 +19,8 @@ Rails.application.routes.draw do
   get '/cart/clear' => 'cart#clearCart'
   
   get '/cart/:id' => 'cart#add'
+  
+  get '/signedinuserprofile' => 'profiles#signedinuserprofile'
 
   resources :items
   # The priority is based upon order of creation: first created -> highest priority.
